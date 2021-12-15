@@ -3,7 +3,8 @@ import axios from 'axios';
 
 const DeletePost = () => {
   const [idPost, setidPost] = useState('');
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     axios.delete(`https://repechaje-backend.herokuapp.com/posts/${idPost}`);
   };
   return (

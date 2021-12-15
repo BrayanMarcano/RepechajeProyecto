@@ -1,9 +1,11 @@
 /* eslint-disable no-undef */
 import React, { useState } from 'react';
+import axios from 'axios';
 
 const DeleteUser = () => {
   const [userId, setId] = useState('');
   const handleSubmit = () => {
+    e.preventDefault();
     axios.delete(`https://repechaje-backend.herokuapp.com/user/${userId}`);
   };
   return (
