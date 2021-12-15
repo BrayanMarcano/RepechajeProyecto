@@ -1,0 +1,8 @@
+
+const handleClick= () => {
+    fetch 'https://repechaje-backend.herokuapp.com/posts/${userId}'
+    method: 'DELETE'
+    
+}
+
+<button onClick={handleClick}>Delete</button>
